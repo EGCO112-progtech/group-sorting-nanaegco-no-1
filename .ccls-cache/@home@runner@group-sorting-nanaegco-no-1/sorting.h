@@ -11,24 +11,18 @@ void display(int a[], int n) {
   printf("\n");
 }
 
-void selection(int a[], int n) {
-
-  int i, j;
-
-  int m = a[0]; // minimum
-  int mi = 0;
-
-  for (j = 0; j < n - 1; j++) {
-    m = a[j];
-    mi = j;
-    for (i = j + 1; i < n; i++) {
-      if (m < a[i]) {
-        m = a[i];
-        mi = i;
-      }
+void selection(int data[], int length) {
+  int i, j, m;
+  for (i = 0; i < length - 1; i++) {
+    m = i;
+    for (j = i + 1; j < length; j++) {
+      if (data[j] > data[m])
+        m = j;
     }
-    swap(&a[j], &a[mi]);
-    display(a, n);
+    if (m != i) {
+      swap(&data[i], &data[m]);
+      display(data, length);
+    }
     printf("\n");
   }
 }
