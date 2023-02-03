@@ -11,35 +11,42 @@ void display(int a[], int n) {
   printf("\n");
 }
 
-void selection(int a[], int n) {
-  int i, j, m;
-  for (i = 0; i < n - 1; i++) {
-    m = i;
-    for (j = i + 1; j < n; j++) {
-      if (a[j] > a[m])
-        m = j;
+void selectionSort(int A[],int n) {
+    int temp,max,i,j;
+    for(i=0;i<n-1;i++) {
+        max = i; 
+        for(j=i+1;j<n;j++) {
+            if(A[j] > A[max]) {
+                max = j;
+            }
+        }
+        temp = A[max]; 
+        A[max] = A[i];
+        A[i] = temp; 
+        display(A,n);
+        printf("\n");
     }
-    if(m != i){
-      swap(&a[i], &a[m]);
-      display(a, n);
-      printf("\n");
-    }
-  }
-}
+  printf("\n");
+}  
 
-void insertion(int a[], int n) {
-  int i, j, m;
-  for (i = 0; i < n - 1; i++) {
-    if (a[i] < a[i + 1]) {
-      swap(&a[i], &a[i + 1]);
-      display(a, n);
-      for (j = i; a[j - 1] > a[j] && i > 0; j--) {
-        swap(&a[j - 1], &a[j]);
-        display(a, n);
-      }
-      printf("\n");
+void insertion(int A[], int n1) {
+  int i, j;
+  int value = A[j];
+  display(A,n1);
+  for (j = 1; j < n1; j++) {
+    int value = A[j];
+    for (i = j - 1; i >= 0; i--) {
+      if (value < A[i])
+        break;
+      else
+        A[i + 1] = A[i];
+      display(A, n1);
     }
+    A[i + 1] = value;
+    display(A, n1);
+    printf("\n");
   }
+    printf("\n");
 }
 
 void swap(int *a, int *b) {
