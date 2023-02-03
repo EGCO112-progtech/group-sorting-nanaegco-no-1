@@ -55,7 +55,7 @@
       "setup": "make",
       "run": "./sort insertion 6 5 2 3",
       "input": "",
-      "output": "    6    5    2    3\r\n    6    5    2    3\r\n\r\n    6    5    2    3\r\n\r\n    6    5    2    2\r\n    6    5    3    2\r\n\r\n\r\n    6    5    3    2",
+      "output": "6   5   2   3\r\n    6    5    2    3\r\n\r\n    6    5    2    3\r\n\r\n    6    5    2    2\r\n    6    5    3    2\r\n\r\n\r\n    6    5    3    2",
       "comparison": "included",
       "timeout": 10,
       "points": null
