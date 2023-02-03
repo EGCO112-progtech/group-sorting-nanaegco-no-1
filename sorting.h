@@ -19,10 +19,8 @@ void selection(int data[], int length) {
       if (data[j] > data[m])
         m = j;
     }
-    if (m != i) {
       swap(&data[i], &data[m]);
       display(data, length);
-    }
     printf("\n");
   }
 }
