@@ -26,7 +26,7 @@ void selection(int data[], int length)
 void insertion(int a[], int n) {
   int i, j, m;
   for (i = 0; i < n - 1; i++) {
-    if (a[i] > a[i + 1]) {
+    if (a[i] < a[i + 1]) {
       swap(&a[i], &a[i + 1]);
       display(a, n);
       for (j = i; a[j - 1] > a[j] && i > 0; j--) {
