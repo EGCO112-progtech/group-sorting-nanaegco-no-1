@@ -11,7 +11,7 @@ void display(int a[], int n) {
   printf("\n");
 }
 
-void selectionSort(int A[],int n) {
+void selection(int A[],int n) {
     int temp,max,i,j;
     for(i=0;i<n-1;i++) {
         max = i; 
