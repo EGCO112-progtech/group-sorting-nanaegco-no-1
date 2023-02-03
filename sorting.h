@@ -1,6 +1,8 @@
 #include <stdio.h>
 // selection sort function module in C
 
+void swap();
+
 void display(int a[],int n){
 
     int i;
