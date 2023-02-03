@@ -10,21 +10,19 @@ int main(int argc, char *argv[]) {
   for (int i = 0; i < n; i++)
     a[i] = atoi(argv[i + 2]);
  if(!strcmp(argv[1], "bubble")){
-   printf("1");
+   display(a,n);
    bubble(a,n);
    display(a,n);
  }
  else if(!strcmp(argv[1], "insertion")){
-   printf("2");
+   display(a,n);
    insertion(a,n);
    display(a,n);
  }
  else if(!strcmp(argv[1], "selection")){
-   printf("3");
+   display(a,n);
    selection(a,n);
    display(a,n);
  }
  return 0;
 }
-
-
