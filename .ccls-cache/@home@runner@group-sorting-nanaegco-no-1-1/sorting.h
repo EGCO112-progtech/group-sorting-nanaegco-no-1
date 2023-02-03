@@ -11,7 +11,7 @@ void display(int a[],int n){
   
 }
 
-void selection(int data[], int length) 
+void selectionSort(int data[], int length) 
 { 
 	int i, j, m, mi; 
 	
@@ -35,7 +35,7 @@ void swap(int *a,int *b){
   
 }
 
-void bubble(int a[],int n){
+void bubbleSort(int a[],int n){
 
 int i,j;
 int sorted;
