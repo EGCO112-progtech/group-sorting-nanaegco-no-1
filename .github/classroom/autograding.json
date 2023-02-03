@@ -44,7 +44,7 @@
       "name": "select2",
       "setup": "make",
       "run": "./sort selection  6 5 2 3",
-      "input": "    6    5    2    3\r\n    6    5    2    3\r\n\r\n    6    5    2    3\r\n\r\n    6    5    3    2\r\n\r\n\r\n    6    5    3    2",
+      "input": "    6    5    2    3\r\n    6    5    2    3\r\n\r\n    6    5    2    3\r\n\r\n    6    5    3    2\r\n\r\n    6    5    3    2",
       "output": "",
       "comparison": "included",
       "timeout": 10,
