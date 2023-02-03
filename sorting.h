@@ -2,6 +2,8 @@
 // selection sort function module in C
 void swap();
 
+void swap();
+
 void display(int a[],int n){
 
     int i;
@@ -50,7 +52,20 @@ void swap(int *a,int *b){
 void bubble(int a[],int n){
 
 int i,j;
-int sorted;
+  for(i=0; i<n i++){
+    int sorted=0;
+    for(j=0; j<=n-1; j++)
+      if(a[j]<a[j+1]){
+        swap(&a[j],&a[j+1]);
+        sorted=1;
+      }
+    display(a,n);
+  }
+  if(sorted==0) break;
+}
+
+  
+  
 // how may pair to compare?
 for(j=1;j<=n-1;j++){
  
